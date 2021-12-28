@@ -25,3 +25,14 @@ var animals = {
 
 name = "dog";
 animals.print();
+
+var time = (t) => {
+  console.log("time:", t);
+  //while (true); // 무한루프
+};
+
+setTimeout(() => time(100), 0);
+setTimeout(() => time(200), 0);
+//0초 지연으로 바로 콘솔창에 보임
+//time: 100
+//time: 200
